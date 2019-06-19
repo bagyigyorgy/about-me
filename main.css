@@ -16,6 +16,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: url('assets/160831 Bagyi 02 031 copy.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.head, .content {
+  text-align: center;
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
 }
 
 img {
