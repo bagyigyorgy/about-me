@@ -7,9 +7,28 @@
 }
 
 /* positioning */
-.profile-card {
-  width: 480px;
+.profile-card, img {
+  width: 360px;
   max-width: calc(100vw - 10px);
+}
+
+.profile-card {
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 8px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+.head, .head-line, .content, .links {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.head-line, .content {
+  width: 90%;
+}
+
+.head, .about, .links {
+  margin-bottom: 5%;
 }
 
 body {
@@ -19,21 +38,44 @@ body {
   height: 100vh;
   background: url('assets/160831 Bagyi 02 031 copy.jpg') no-repeat center center fixed;
   background-size: cover;
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: -.04em;
+  line-height: 1.5;
 }
 
-.head, .content {
-  text-align: center;
+h1, h2 {
+  color: rgb(32,32,32);
 }
 
-.profile-card {
-  background-color: hsla(0, 0%, 100%, .5);
-  border-radius: 4px;
-  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 17px;
+  color: rgb(56,56,56);
 }
 
 img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  padding: 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  filter: grayscale(100%);
+}
+
+/*interaction*/
+li:hover {
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(0%);
 }
